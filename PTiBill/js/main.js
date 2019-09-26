@@ -62,12 +62,13 @@ var header = document.getElementById("myHeader");
 var sticky = 174;
 
 function myFunction() {
-    $('#revisionAnnualId').hide();
+    //$('#revisionAnnualId').hide();
     if (window.pageYOffset > sticky) {
         header.classList.add("sticky");
         header.classList.remove("fadeOut");
+        //$('#revisionAnnualId').show();
     } else {
-
+        //$('#revisionAnnualId').hide();
         header.classList.add("fadeOut");
         //header.classList.remove("sticky");
     }
