@@ -114,14 +114,8 @@ function onApplyGiro() {
     window.location.href = 'https://mytax.iras.gov.sg/ESVWeb/default.aspx?target=MPYMApplyGIROBankDetails&toLoginSelection=true';
 }
 
-$(document).ready(function () {
-    //$('#myInput').hide();
-
-    $('[data-toggle="popover"]').popover();
-});
 
 $('#copyimageId').click(function(){
-    $('#copytext').popover('show');
     onCopy();
 });
 
@@ -132,11 +126,6 @@ $('#copytext').click(function(){
 $('#savescreen').click(function(){
     window.print();
 });
-
-$('.popover-dismiss').popover({
-    trigger: 'focus'
-})
-
 
 function onSubmitCaptcha() {
     
