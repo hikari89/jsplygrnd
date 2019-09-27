@@ -125,7 +125,7 @@ $('#copyimageId').click(function(){
     onCopy();
 });
 
-$('#copyText').click(function(){
+$('#copytext').click(function(){
     onCopy();
 });
 
