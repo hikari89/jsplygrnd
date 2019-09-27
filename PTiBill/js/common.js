@@ -96,10 +96,8 @@ function onUOBBank() {
 }
 
 function onCopy() {
-    var copyText = document.getElementById("myInput");
-    copyText.select();
+    $("#myInput").select();
     document.execCommand("copy");
-    copyText.blur();
     window.getSelection().removeAllRanges();
 }
 
@@ -127,15 +125,14 @@ $('#copyimageId').click(function(){
     onCopy();
 });
 
+$('#copyText').click(function(){
+    onCopy();
+});
+
 $('#savescreen').click(function(){
     window.print();
 });
 
-$(function () {
-    $('#copytext').on('hide.bs.popover', function (e) {
-        onCopy();
-    });
-});
 $('.popover-dismiss').popover({
     trigger: 'focus'
 })
