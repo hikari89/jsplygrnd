@@ -1,3 +1,11 @@
+.orn-stripe {
+    right: 0;
+    position: absolute;
+    height: 222px;
+    top: -82px;
+    padding-top: 12px;
+}
+
 .right-Padding {
     padding-right: 0px !important;
 }
@@ -215,6 +223,7 @@ h2 {
     line-height: 12px;
     margin-bottom:0px!important;
 }
+
 
 .annual-value-image {
     top: -15px;
