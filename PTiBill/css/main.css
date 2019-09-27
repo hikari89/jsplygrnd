@@ -1,3 +1,4 @@
+
 .top-Padding {
     padding-top: 12px !important;
 }
@@ -716,10 +717,10 @@ h1 {
 .axsCell {
     border-width: 0px;
     position: relative;
-    left: 21px;
-    top: -29px;
-    width: 132px;
-    height: 29px;
+    left: 22px;
+    /*top: -29px;*/
+    width: 138px;
+    height: 40px;
     background: inherit;
     background-color: rgba(255, 255, 255, 1);
     box-sizing: border-box;
@@ -733,8 +734,8 @@ h1 {
 }
 
 .axs-img {
-    height: 18px;
-    width: 95px;
+    height: 28px;
+    width: 104px;
     position: relative;
     top: 4px;
 }
