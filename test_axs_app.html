@@ -15,7 +15,7 @@
     <button id="axs_action_btn">Click to pay with AXS</button> ------
     <button id="banks_action_btn">Click to pay with OCBC iBanking</button>
      <button id="axs_action_btn_2">Click to pay with AXS (2)</button> ------
-     <button id="axs_action_btn_2">Click to pay with AXS (3)</button> ------
+     <button id="axs_action_btn_3">Click to pay with AXS (3)</button> ------
 
     <p id="debug"></p>
 
@@ -68,7 +68,7 @@
 
         $(document).ready(function () {
             $('#axs_action_btn').click(onAXSButtonClicked);
-            $('#axs_action_btn_2').click(onAXSButtonClicked_2);
+            $('#axs_action_btn_3').click(onAXSButtonClicked_3);
             $('#banks_action_btn').click(onBanksButtonClicked);
             $('#debug').html("User Agent: " + navigator.userAgent + "<br/><br/>" + "Is Mobile Device: " +
                 isMobileDevice() + "<br/><br/>" + "Is iPhone: " + isiPhone());
