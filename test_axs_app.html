@@ -25,8 +25,8 @@
         var axs_ios_store_url = "https://itunes.apple.com/sg/app/axs-payment/id666250798?mt=8";
         var axs_android_store_url = "https://play.google.com/store/apps/details?id=com.axs&hl=en";
         var deepLink = new DeepLink({
-          appStore: axs_android_store_url,
-          playStore: axs_ios_store_url,
+          appStore: axs_ios_store_url,
+          playStore: axs_android_store_url,
         });
         
         deepLink.register(document.getElementById('axs_action_btn_2'), {
@@ -159,6 +159,10 @@
             visible = !visible;
         }
 
+        function isSafari() {
+         return (navigator.userAgent.indexOf("Safari") != -1)   
+        }
+        
         function isiPhone() {
             return (
                 (navigator.platform.indexOf("iPhone") != -1) ||
