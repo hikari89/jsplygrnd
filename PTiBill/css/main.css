@@ -1,3 +1,8 @@
+.sms-text {
+    background-color: #e8e8e8;
+    border-radius: 10px;
+}
+
 .margin-con {
     margin-top: -45px;
 }
@@ -591,7 +596,7 @@ h2 {
 
 #container {
     position: relative;
-    height: 380px; /*Change*/
+    height: 400px; /*Change*/
     /*overflow: hidden*/ /*Change*/
 }
 
