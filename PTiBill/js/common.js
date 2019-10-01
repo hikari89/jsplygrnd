@@ -159,7 +159,7 @@ function validateRecaptcha(event) {
 }
 
 $(document).ready(function () {
-
+    smsDate();
     $("#nric_submit_btn").click(validateRecaptcha);
 });
 
@@ -208,4 +208,21 @@ function onVisibilityChange() {
 
 function feedback() {
     window.open('https://www.iras.gov.sg/IRASHome/Feedback/Rate-Interactive-Property-Tax-Bill/');
+}
+
+function NRICPage() {
+    window.location.replace('index.html');
+}
+
+
+function smsDate() {
+    const months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+    var current_datetime = new Date();
+    var cur_date;
+    if (current_datetime.getDate() < 10)
+    { cur_date = '0' + current_datetime.getDate() } else { cur_date = current_datetime.getDate()}
+
+    var smstextdate = cur_date + " " + months[current_datetime.getUTCMonth()] + " " + current_datetime.getFullYear() + ", " + current_datetime.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
+    $('#smstext').text(smstextdate);
+
 }
