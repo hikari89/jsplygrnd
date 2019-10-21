@@ -1,4 +1,8 @@
 
+.padding-left{
+    padding-left:0px;
+}
+
 .view-your-bill {
     margin-top: -30px !important;
 }
@@ -10,7 +14,7 @@
 }
 
 .view-bill-img {
-    padding-left: 15px;
+    /*padding-left: 15px;*/
     padding-top: 5px;
 }
 
