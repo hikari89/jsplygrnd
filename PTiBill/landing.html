@@ -30,12 +30,12 @@
     <div id="form1" class="min-screen max-screen desktop-detected">
         <div class="header col-xs-12 col-sm-12" id="myHeader">
             <!--<img class="logo-img" src="images/logo.png" />-->
-            <div class="logo-img">
+            <!--<div class="logo-img">
                 <img class="bookmark-img" src="images/bookmark.png" />
                 <a href="#" onclick="javascript:onViewIBill();">
                     <img class="bookmark-pdf-img" src="images/bookmark-pdf.png" />
                 </a>
-            </div>
+            </div>-->
             
         </div>
 
@@ -83,7 +83,7 @@
                     <img src="images/singapore_map.png" />
                 </div>
                 <div class="col-xs-12 col-sm-12 nation-text">
-                    <p>Your property tax, together with other taxes, go towards making Singapore a better home for all. For example, our education system gives every child the opportunity to receive at least 10 years of quality school education.</p>    
+                    <p>Your property tax, together with other taxes, go towards making Singapore a better home for all. For example, our education system gives every child the opportunity to receive at least 10 years of quality school education.</p>
                 </div>
             </div>
 
@@ -149,6 +149,19 @@
                 </div>
             </div>
 
+            <div class="row view-your-bill">
+                <hr class="view-bill-line" />
+                <div class="col-xs-12 col-sm-12 text-hyperlink">
+                    <a id="viewBill" href="https://mytax.iras.gov.sg/ESVWeb/default.aspx?target=MPORPTCorrespMain&toLoginSelection=true">
+                        <div class="col-xs-2 col-sm-2">
+                            <img class="view-bill-img" src="images/viewBill.png" />
+                        </div>
+                        <div class="col-xs-10 col-sm-10">
+                            View your bill in PDF copy on myTax Portal <i>(SingPass login required)</i>
+                        </div>
+                    </a>
+                </div>
+            </div>
 
             <div class="row orange-section-header annual-value" id="container">
                 <!-- mid-slider start -->
@@ -172,7 +185,7 @@
                                 <a role="button" data-placement="top" class="popovers" data-toggle="popover" tabindex="0" data-trigger="focus" data-content="IRAS reviews Annual Value yearly to reflect changes in market rentals of similar properties.">Annual Value</a>
                                 has been revised from $33,000 to $36,000 from 1 January 2020, in line with market rents.
                             </p>
-                            
+
                         </div>
 
                         <div class="clearfix"></div><br>
@@ -238,9 +251,9 @@
                     <p>
                         Let's look at the gross rental contracted in your development
                     </p>
-                    <div class="col-xs-12 col-sm-12 black-stripe">
-                        <img src="images/black-stripe.png" />
-                    </div>
+                    <!--<div class="col-xs-12 col-sm-12 black-stripe">
+                <img src="images/black-stripe.png" />
+            </div>-->
                 </div>
 
             </div>
@@ -296,14 +309,14 @@
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ibill-max-width float-right">
                     <!--<div class="ibill-cloud">
-                        <div class="col-xs-12 col-sm-12">
-                            <img src="images/cloud.png" />
-                        </div>
-                        <div class="flex-center cloud-strips-image">
-                            <img src="images/cloud_stripe_big.png" />
-                            <img src="images/cloud_stripe_small.png" />
-                        </div>
-                    </div>-->
+                <div class="col-xs-12 col-sm-12">
+                    <img src="images/cloud.png" />
+                </div>
+                <div class="flex-center cloud-strips-image">
+                    <img src="images/cloud_stripe_big.png" />
+                    <img src="images/cloud_stripe_small.png" />
+                </div>
+            </div>-->
                     <img class="stripe" src="images/dark_blue_stripe.png" />
                     <!--<img class="key-image fade-left" id="key_img" src="images/key.svg" />-->
                     <img class="handkey-img fade-left" id="key_img" src="images/handkey.png" />
@@ -323,7 +336,7 @@
                         <div class="tick-image-container flex-center">
                             <!--<img class="tick-image" src="images/ootr-key.png" width="71" height="60" />-->
 
-                            <img class="tick-image" src="images/lightbulb.png" style="width:71px; height:60px"  />
+                            <img class="tick-image" src="images/lightbulb.png" style="width:71px; height:60px" />
                         </div>
                         <p class="gradient-box-text">
                             In fact, you would have to pay $3,720 in property tax if you were to rent out your property.
@@ -355,7 +368,6 @@
  
     <script src="js/vendor/jquery-1.11.2.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/vendor/ScrollMagic.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/common.js"></script>
 </body>
